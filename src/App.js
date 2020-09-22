@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ContactForm from './ContactForm';
+import Header from './Header';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header />
+      <div className="app__banner">
+        <img className="banner" src="https://wallpapershome.com/images/pages/pic_h/15366.jpg" alt="Home Banner" />
+        <h1>Create your happiness with great recpies</h1>   
+     </div>
+
+     <ContactForm />  
     </div>
   );
 }
